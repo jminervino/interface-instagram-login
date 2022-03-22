@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(130deg, #5851DB, #833AB4, #C13584, #E1306C, #FD1D1D);
+    width: 100vw;
+    height: 100vh;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    
+    margin-left: -16px;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 835px;
+}
+
+button {
+    background-color: #0095f6;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    color: #fff;
+    padding: 6px 9px;
+    margin-bottom: 26px;
+}
+
+
+.phone-box {
+    background-image: url(/img/phone-photo.png);
+    margin-left: -35px;
+    margin-right: -15px;
+    height: 630px;
+    width: 450px;
+    position: relative;
+}
+
+.phone-img {
+    margin-top: 100px;
+    margin-left: 151px;
+    position: absolute;
+    opacity: 0;
+}
+
+#slider img.selected {
+    opacity: 1;
+}
+
+.weigth {
+    font-weight: 600;
+}
+
+.text {
+    background-color: transparent;
+    border: none;
+    color: #0095f6;
+}
+
+.login {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #ffffff;
+    border: 1px solid rgba(var(--b6a,219,219,219),1);
+    border-radius: 8px;
+    width: 348px; 
+}
+
+.box-1  {
+    height: 320px;
+    margin: 0 0 10px;
+}
+
+.hero {
+    border-radius: 100%;
+    height: 84px;
+    margin-bottom: 28px;
+    margin-top: 25px;
+}
+
+.box-2  {
+    height: 70px;
+    margin: 0 0 10px;
+    padding: 45px;
+}
+
+.grayed-text {
+    color: #8e8e8e;
+}
+
+.logo {
+    width: 175px;
+    height: 51px;
+}
+
+.space {
+    margin: 10px 20px 10px 20px;
+    color: #ffff;
+}
+
+.imglogos {
+    height: 40px;
+    margin: 10px 0 10px 0;
+}
+
+@media (max-width: 800px){
+    .phone-box{
+       opacity: 0;
+   }
+}
+
+@media (max-width: 320px){
+    body{
+        background-repeat: no-repeat;
+        margin-top: -100px;
+        height: 100%;
+        width: 100%;
+    }
+    
+    .box {
+        width: 290px;
+    }
+
+    .box-2{
+        padding: 0px;
+    }
+}
